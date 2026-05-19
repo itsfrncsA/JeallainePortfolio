@@ -17,6 +17,13 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 2600);
 }
 
+/* ── Copy to clipboard helper ── */
+function copyToClipboard(text, msg) {
+  navigator.clipboard.writeText(text)
+    .then(() => showToast(msg))
+    .catch(() => showToast('Failed to copy'));
+}
+
 /* ── Copy location to clipboard ── */
 function copyLocation() {
   navigator.clipboard.writeText('San Jose Rd., Tigbao Talamban, Cebu City, Philippines, 6000')
