@@ -406,12 +406,11 @@ main {
 .profile-quote {
   color: var(--gold);
   font-family: var(--serif);
-  font-size: 1.4rem;
+  font-size: 2.8rem;      /* was 1.4rem */
   font-style: normal;
   line-height: 0;
-  vertical-align: -3px;
+  vertical-align: -10px;  /* was -3px */
 }
-
 @media (max-width: 1024px) {
   main {
     padding: 0 40px 80px;
