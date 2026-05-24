@@ -404,14 +404,13 @@ main {
 }
 .profile-text::before {
   content: '"';
-  font-size: 4rem;
-  display: inline-block;
-  vertical-align: top;
-  line-height: 0.8;
+  font-size: 3rem;        /* was 4rem — slightly smaller */
+  display: block;         /* was inline-block — put it on its own line */
+  line-height: 1;         /* was 0.8 */
   color: var(--gold);
   font-family: var(--serif);
-  margin-right: 16px;
-  margin-top: -8px;
+  margin-bottom: 8px;     /* space between quote and text */
+  margin-top: 0;          /* remove the -8px hack */
   opacity: 0.8;
 }
 
