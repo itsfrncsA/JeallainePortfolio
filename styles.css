@@ -397,21 +397,19 @@ main {
   font-family: var(--sans);
   font-size: 1.05rem;
   font-weight: 400;
-  line-height: 1.85;        /* was 1.6 — tighter, more intentional */
+  line-height: 1.85;
   color: var(--light);
   font-style: italic;
-  max-width: 680px;          /* ADD THIS — stops the text from over-stretching */
+  max-width: 680px;
 }
-.profile-text::before {
-  content: '"';
-  font-size: 3rem;        /* was 4rem — slightly smaller */
-  display: block;         /* was inline-block — put it on its own line */
-  line-height: 1;         /* was 0.8 */
+
+.profile-quote {
   color: var(--gold);
   font-family: var(--serif);
-  margin-bottom: 8px;     /* space between quote and text */
-  margin-top: 0;          /* remove the -8px hack */
-  opacity: 0.8;
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 0;
+  vertical-align: -3px;
 }
 
 @media (max-width: 1024px) {
