@@ -397,9 +397,10 @@ main {
   font-family: var(--sans);
   font-size: 1.05rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.85;        /* was 1.6 — tighter, more intentional */
   color: var(--light);
   font-style: italic;
+  max-width: 680px;          /* ADD THIS — stops the text from over-stretching */
 }
 .profile-text::before {
   content: '"';
